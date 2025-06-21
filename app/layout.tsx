@@ -1,15 +1,14 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
+import { LoaderProvider } from "@/context/LoaderContext";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+const SuisseIntl = localFont({
+  src: [
+    { path: "./font/SuisseIntl-Regular.ttf", weight: "400", style: "normal" },
+    { path: "./font/SuisseIntl-Bold.ttf", weight: "700", style: "bold" },
+  ],
+  variable: "--font-SuisseIntl",
 });
 
 export const metadata: Metadata = {
@@ -19,15 +18,13 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
+      <body className={`${SuisseIntl.variable} antialiased font-SuisseIntl`}>
+        <LoaderProvider>{children} </LoaderProvider>
       </body>
     </html>
   );

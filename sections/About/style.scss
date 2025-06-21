@@ -1,0 +1,23 @@
+.descPhone {
+  font-size: clamp(15px, 7vw, 46px);
+  line-height: 1.2;
+}
+
+.parghrap {
+  font-size: clamp(10px, 4vw, 16px);
+  line-height: 1.2;
+}
+
+@media (min-width: 1024px) {
+  .parghrap {
+    font-size: clamp(10px, 1.1vw, 16px);
+    line-height: 1.2;
+  }
+}
+
+@media (min-width: 768px) {
+  .desc {
+    font-size: clamp(23px, 3vw, 46px);
+    line-height: 1.2;
+  }
+}

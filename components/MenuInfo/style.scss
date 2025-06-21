@@ -1,0 +1,11 @@
+.desc {
+  font-size: clamp(12px, 4vw, 18px);
+  line-height: 1.1;
+}
+
+@media (min-width: 768px) {
+  .desc {
+    font-size: clamp(10px, 1vw, 15px);
+    line-height: 1.1;
+  }
+}

@@ -1,0 +1,11 @@
+.title {
+  font-size: clamp(32px, 15vw, 99px);
+  line-height: 1;
+}
+
+@media (min-width: 768px) {
+  .title {
+    font-size: clamp(48px, 7.2vw, 100px);
+    line-height: 1;
+  }
+}
