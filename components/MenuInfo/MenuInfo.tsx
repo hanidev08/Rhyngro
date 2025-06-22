@@ -78,7 +78,7 @@ export const MenuInfo = ({ data }: Props) => {
     >
       <div className="container flex justify-between bg-white">
         <div
-          className=" uppercase"
+          className=" uppercase cursor-pointer"
           onClick={() => {
             setIsActive(true);
           }}
@@ -86,7 +86,7 @@ export const MenuInfo = ({ data }: Props) => {
           Info
         </div>
         <div>
-          <Link href="/projects">All projects</Link>
+          <Link href="/projects" className=" cursor-pointer">All projects</Link>
         </div>
       </div>
       <div
@@ -126,7 +126,7 @@ export const MenuInfo = ({ data }: Props) => {
             </div>
           </div>
           <div
-          className=" absolute bottom-0 uppercase"
+          className=" absolute bottom-0 uppercase cursor-pointer"
             onClick={() => {
               setIsActive(false);
             }}

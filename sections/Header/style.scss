@@ -2,6 +2,11 @@
   line-height: 0.8;
 }
 
+.menu {
+  font-size: clamp(30px, 10vw, 55px);
+  line-height: clamp(1.2, 1.2, 1.2);
+}
+
 .headingMobile {
   font-size: clamp(16px, 4vw, 24px);
   line-height: 0.8;

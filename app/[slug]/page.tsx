@@ -20,7 +20,7 @@ const Page = async ({ params }: { params: Promise<{ slug: string }> }) => {
       <section>
         <div className="container mt-52">
           <div className=" flex flex-col">
-            <h1 className="title uppercase">{data.title}</h1>
+            <h1 className="titleSlug uppercase">{data.title}</h1>
             <div className=" flex flex-col gap-4 sm:gap-12 md:gap-42">
               <div className=" flex justify-center items-center">
                 <div className=" relative w-[100vw] max-w-[1400px] aspect-[6/5]">
