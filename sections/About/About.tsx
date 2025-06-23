@@ -4,7 +4,7 @@ import "./style.scss";
 export const About = () => {
   return (
     <section>
-      <div className="container mt-5">
+      <div className="container mt-24 md:mt-5">
         <div className=" hidden md:flex justify-between items-start">
           <h1 className="parghrap w-1/3 ">Company</h1>
           <div className="w-2/3">
@@ -55,7 +55,7 @@ export const About = () => {
           </div>
         </div>
         <div className=" md:hidden flex flex-col">
-          <h1 className="parghrap mt-24">Company</h1>
+          <h1 className="parghrap">Company</h1>
           <div className=" flex flex-col max-w-[800px]">
             <p className="parghrap mt-12 ">
               Founded in 1982 by Principals Anthony Ingrao and Randy Kemper, our

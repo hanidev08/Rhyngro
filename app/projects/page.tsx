@@ -7,7 +7,7 @@ import Link from "next/link";
 const page = () => {
   return (
     <section>
-      <div className="container mt-36 min-h-screen">
+      <div className="container mt-36">
         <div
           className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 
         lg:grid-cols-4 gap-10 place-items-center"

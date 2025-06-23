@@ -1,0 +1,11 @@
+.parghrapOffice {
+  font-size: clamp(9px, 3.7vw, 16px);
+  line-height: 1.2;
+}
+
+@media (min-width: 1024px) {
+  .parghrapOffice {
+    font-size: clamp(9px, 1.1vw, 16px);
+    line-height: 1.2;
+  }
+}

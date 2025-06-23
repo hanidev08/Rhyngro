@@ -1,0 +1,11 @@
+.parghrapRecognition {
+  font-size: clamp(9px, 3.7vw, 15px);
+  line-height: 1.2;
+}
+
+@media (min-width: 1024px) {
+  .parghrapRecognition {
+    font-size: clamp(9px, 1.1vw, 15px);
+    line-height: 1.2;
+  }
+}

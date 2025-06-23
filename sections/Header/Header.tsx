@@ -16,9 +16,8 @@ import Link from "next/link";
 
 const navItems = [
   { label: "Projects", href: "/projects" },
-  { label: "News", href: "/info" },
-  { label: "Office", href: "/Office" },
-  { label: "Contacts", href: "/contacts" },
+  { label: "Office", href: "/office" },
+  { label: "Recognition", href: "/recognition" },
 ];
 
 const slideUp = {
@@ -119,6 +118,9 @@ export const Header = () => {
                   variants={slideUp}
                   initial="initial"
                   animate={shouldAnimate ? "open" : "closed"}
+                  onClick={() => {
+                    setIsActive(false);
+                  }}
                 >
                   {label}
                 </motion.span>
